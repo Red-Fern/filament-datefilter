@@ -37,8 +37,6 @@ class DateFilter extends BaseFilter
     {
         parent::setUp();
 
-        $this->displayFormat = config('tables.date_format', $this->displayFormat);
-
         $this
             ->useColumn($this->getName())
             ->indicateUsing(function (array $state): array {
